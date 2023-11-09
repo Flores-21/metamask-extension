@@ -2944,6 +2944,10 @@ export default class MetamaskController extends EventEmitter {
         this.controllerMessenger,
         'SnapController:enable',
       ),
+      installSnap: this.controllerMessenger.call.bind(
+        this.controllerMessenger,
+        'SnapController:install',
+      ),
       removeSnap: this.controllerMessenger.call.bind(
         this.controllerMessenger,
         'SnapController:remove',
